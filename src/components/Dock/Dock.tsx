@@ -50,7 +50,10 @@ const Dock = () => {
         dock.removeEventListener('mouseleave',handleReset)
       }
   },[])
-  const toggleApp = (id: string, canOpen: boolean) => {};
+  const toggleApp = (id: string, canOpen: boolean) => {
+
+    console.log(id, canOpen);
+  };
   return (
     <section id="dock">
       <div ref={dockRef} className="dock-container">
