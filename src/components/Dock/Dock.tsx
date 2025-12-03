@@ -3,10 +3,10 @@ import React from "react";
 import Tooltip from "./Tooltip";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-
+import useWindowStore from "#store/useWindowStore";
 const Dock = () => {
+  const {openWindow,closeWindow,windows} = useWindowStore()
   const dockRef = React.useRef<HTMLDivElement>(null);
-  console.log(dockRef.current);
   useGSAP(()=>{
     const dock = dockRef.current
     if(!dock) return
@@ -20,10 +20,10 @@ const Dock = () => {
             const distance = Math.abs(mouseX - center)
             const intensity = Math.exp(-(distance**2)/4000)
             gsap.to(icon, {
-              scale: 1.15+0.15*intensity,
+              scale: 1+0.15*intensity,
               y:-15*intensity,
               duration:0.2,
-              ease:"power3.out"
+              ease:"power1.out"
 
             })
           })
@@ -50,10 +50,19 @@ const Dock = () => {
         dock.removeEventListener('mouseleave',handleReset)
       }
   },[])
-  const toggleApp = (id: string, canOpen: boolean) => {
+  const toggleApp = (app:any) => {
+    if(!app.canOpen) return
+    
+    const window  = windows[app.id]
 
-    console.log(id, canOpen);
+    if(window.isOpen){
+      closeWindow(app.id)
+    }else{
+      openWindow(app.id)
+    }
   };
+    
+
   return (
     <section id="dock">
       <div ref={dockRef} className="dock-container">
@@ -65,7 +74,7 @@ const Dock = () => {
                 aria-label={name}
                 className="dock-icon"
                 disabled={!canOpen}
-                onClick={() => toggleApp(id, canOpen)}
+                onClick={() => toggleApp({ id, name , icon, canOpen })}
               >
                 <img
                   src={`images/${icon}`}
