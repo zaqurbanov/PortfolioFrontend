@@ -4,6 +4,11 @@ import Welcome from '#components/Welcome/Welcome';
 import Terminal from '#components/windows/Terminal/Terminal';
 import Draggable from 'gsap/Draggable';
 import gsap from 'gsap';
+import Safari from '#components/windows/Safari/Safari';
+import Resume from '#components/windows/Resume/Resume';
+import Finder from '#components/windows/Finder/Finder';
+import Text from '#components/Text/Text';
+import Image from '#components/Image/Image';
 gsap.registerPlugin(Draggable)
 function App() {
   
@@ -16,6 +21,14 @@ function App() {
       <Dock/>
 
       <Terminal/>
+
+      <Safari/>
+
+      <Resume/>
+
+      <Finder/>
+      <Text/>
+      <Image/>
     </main>
     </>
     

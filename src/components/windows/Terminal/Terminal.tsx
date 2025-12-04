@@ -1,3 +1,4 @@
+import WindowControls from "#components/WindowControls";
 import { techStack } from "#constants/index";
 import WIndowWrapper from "#hoc/WindowWrapper";
 import { Check, Flag } from "lucide-react";
@@ -6,6 +7,12 @@ const Terminal = () => {
   return (
     <WIndowWrapper windowKey="terminal" windowName="Tech Stack">
       <>
+      <div>
+            <div id="window-header">
+              <WindowControls name={"terminal"}  />
+              <h2>Tech Stack</h2>
+            </div>
+          </div>
         <div className="techstack">
           <p>
             <span className="font-bold">@ZaurQurbanov </span>
@@ -22,7 +29,7 @@ const Terminal = () => {
               <li key={category} className="flex">
                 <Check className="check" size={20} />
                 <h3>{category}</h3>
-                <ul>
+                <ul className="flex flex-wrap gap-1">
                   {items.map((item, i) => (
                     <li key={i}>{item},</li>
                   ))}

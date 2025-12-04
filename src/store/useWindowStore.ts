@@ -20,11 +20,13 @@ const useWindowStore = create<Store> ()  (immer((set)=>({
     windows:WINDOW_CONFIG,
     nextZIndex:INITIAL_Z_INDEX+1,
     openWindow:(windowKey:any,data =null)=>set((state:any)=>{
+        
         const win = state.windows[windowKey]
         win.isOpen = true
         win.zIndex = state.nextZIndex
         win.data = data ?? win.data
         state.nextZIndex++ 
+        
 
     }),
     closeWindow:(windowKey:any)=>set((state:any)=>{

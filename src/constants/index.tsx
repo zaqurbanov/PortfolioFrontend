@@ -102,7 +102,7 @@ const blogPosts = [
 const techStack = [
   {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
+    items: ["React.js", "Next.js", "TypeScript","Javascript"],
   },
   {
     category: "Mobile",
@@ -114,7 +114,7 @@ const techStack = [
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Node.js", "Express", "NestJS", "AdonisJS"],
   },
   {
     category: "Database",
@@ -132,28 +132,22 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/zaqurbanov",
   },
-  {
-    id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
-  },
+
   {
     id: 3,
     text: "Twitter/X",
     icon: "/icons/twitter.svg",
     bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
+    link: "https://x.com/",
   },
   {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/zaurqurbanov/",
   },
 ];
 
@@ -225,7 +219,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: " Turkiccluster",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -233,35 +227,35 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: " turkiccluster.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "TurkicCluster is a fully functional business directory platform built with Next.js (App Router) and an Express.js backend.",
+            "The project includes JWT authentication, role-based access control, server-side rendering, dynamic company profiles, API integrations, and an optimized search system.",
+            "The frontend and backend were developed collaboratively in a team environment using CI/CD pipelines and a structured Git flow. The platform focuses on performance, scalability, and clean architecture.",
+            
           ],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "turkiccluster.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://www.turkiccluster.com/en",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "turkiccluster.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
+          imageUrl: "/images/turkiImage.png",
         },
         {
           id: 5,
@@ -278,43 +272,43 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "MindMap",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-52 right-80",
+      position: "top-40 left-12",
       windowPosition: "top-[20vh] left-7",
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "Mind map.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+            "As a backend developer,",
+            "I built the server-side architecture for MindMap, an educational management platform.",
+            "Using Node.js and Express.js, I developed REST APIs, authentication, role-based access,",
+            "and the admin panel functionalities that power the system.",
           ],
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "mindmap.az",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://mindmap.az/",
           position: "top-20 left-20",
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "mindmap.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 left-80",
-          imageUrl: "/images/project-2.png",
+          imageUrl: "/images/mindMapImage.png",
         },
         {
           id: 5,
@@ -331,43 +325,49 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "Sinapsmed",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-80",
+      position: "top-2 left-20",
       windowPosition: "top-[33vh] left-7",
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "Sinapsmed.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+            "This project is a modern digital healthcare platform designed to seamlessly connect doctors and patients in one unified ecosystem.",
+            "As part of the development team, I contributed as a Frontend Developer, building a fast, intuitive, and user-friendly interface using Next.js.",
+            "The platform delivers a smooth communication experience through features such as:",
+            "Doctor–patient interaction and appointment flow",
+            "Secure onboarding and authentication",
+            "Dynamic doctor profiles and medical information",
+            "Responsive, mobile-optimized UI",
+            "High-performance pages powered by Next.js routing and rendering techniques",
+            "Our goal was to provide a convenient, accessible, and modern medical experience, allowing patients to reach the right specialists quickly while giving doctors an efficient digital workspace.",
+            "I collaborated closely with backend and design teams to transform complex requirements into clean, scalable, and interactive frontend solutions."
           ],
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "sinapsmed.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+          href: "https://www.sinapsmed.com/",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "food-delivery-app.png",
+          name: "sinapsmed.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-3.png",
+          imageUrl: "/images/sinapImage.png",
         },
         {
           id: 5,
@@ -380,6 +380,185 @@ const WORK_LOCATION = {
         },
       ],
     },
+
+    // ▶ Project 4
+    {
+      id: 8,
+      name: "AyonMMC",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-40 left-12",
+      windowPosition: "top-[20vh] left-7",
+      children: [
+        {
+          id: 1,
+          name: "AyonMMC.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 right-10",
+          description: [
+            "Ayon MMC is a corporate website built to present the company’s services and brand identity in a clean, modern, and user-friendly way.",
+            "As a Frontend Developer, I was responsible for creating a fully responsive interface using HTML, CSS, and JavaScript.",
+            "The website delivers:",
+
+"A polished and professional visual presentation",
+
+"Mobile-friendly and cross-browser compatible layouts",
+
+"Smooth page interactions and intuitive navigation",
+
+"Clean, semantic code optimized for performance",
+
+"My role focused on transforming design concepts into functional, pixel-perfect pages that accurately reflect the company’s image and ensure a positive user experience.",
+            "and the admin panel functionalities that power the system.",
+          ],
+        },
+        {
+          id: 2,
+          name: "ayonmmc.az",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://ayonmmc.az/",
+          position: "top-20 left-20",
+        },
+        // {
+        //   id: 4,
+        //   name: "mindmap.png",
+        //   icon: "/images/image.png",
+        //   kind: "file",
+        //   fileType: "img",
+        //   position: "top-52 left-80",
+        //   imageUrl: "/images/mindMapImage.png",
+        // },
+        {
+          id: 5,
+          name: "Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://google.com",
+          position: "top-60 left-5",
+        },
+      ],
+    },
+
+    // ▶ Project 5
+ {
+      id: 9,
+      name: "sensibleHr",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-40 left-12",
+      windowPosition: "top-[20vh] left-7",
+      children: [
+        {
+          id: 1,
+          name: "sensibleHr.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 right-10",
+          description: [
+            "Sensible HR is a modern, fully responsive HR management platform.",
+            "As a Frontend Developer, I build dynamic and user-friendly interfaces using React, creating reusable components,",
+            "responsive layouts, and smooth user flows. Our team focuses on delivering a clean, functional, and scalable experience for HR operations",
+            "",
+          ],
+        },
+        {
+          id: 2,
+          name: "sensiblehr.az",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://sensiblehr.az/",
+          position: "top-20 left-20",
+        },
+        {
+          id: 4,
+          name: "sensiblehr.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 left-80",
+          imageUrl: "/images/sensibleImage.png",
+        },
+        {
+          id: 5,
+          name: "Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://google.com",
+          position: "top-60 left-5",
+        },
+      ],
+    },
+
+    // ▶ Project 6
+
+
+     {
+      id: 10,
+      name: "Vladimir - Fasij",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-40 left-12",
+      windowPosition: "top-[20vh] left-7",
+      children: [
+        {
+          id: 1,
+          name: "vladimir-fasij.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 right-10",
+          description: [
+            "Vladimir-Fasij.com is a sleek, professionally designed website for a luxury architecture & interior-design studio, delivering a high-end user experience",
+            "Built using Webflow, I participated as a Frontend Developer, turning design vision into a fully functional, responsive and visually appealing website.",
+            "The site features:",
+
+"Clean, modern layout that reflects the premium brand identity",
+
+"Responsive design for seamless experience on desktop and mobile",
+
+"Interactive navigation and smooth page transitions",
+"Fast loading and optimized front-end performance",
+            "My role was to implement the design, ensure pixel-perfect representation and deliver a seamless, brand-consistent user journey.",
+          ],
+        },
+        {
+          id: 2,
+          name: "vladimir-fasij.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://www.vladimir-fasij.com/",
+          position: "top-20 left-20",
+        },
+        {
+          id: 4,
+          name: "vladimir-fasij.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 left-80",
+          imageUrl: "/images/fasijImage.png",
+        },
+        {
+          id: 5,
+          name: "Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://google.com",
+          position: "top-60 left-5",
+        },
+      ],
+    },
+    
   ],
 };
 
@@ -390,24 +569,8 @@ const ABOUT_LOCATION = {
   icon: "/icons/info.svg",
   kind: "folder",
   children: [
-    {
-      id: 1,
-      name: "me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
-    },
-    {
-      id: 2,
-      name: "casual-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
-    },
+ 
+  
     {
       id: 3,
       name: "conference-me.png",
@@ -415,7 +578,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/me.jpeg",
     },
     {
       id: 4,
@@ -425,12 +588,13 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      image: "/images/me.jpg",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        "I am a Frontend Developer focused on building clean, scalable, and user-centered digital experiences.",
+        "I specialize in React, Next.js, JavaScript, and modern UI development, and I enjoy turning complex ideas into fast, intuitive, and visually engaging interfaces.",
+        "I have experience working both independently and in collaborative teams, contributing to projects such as business platforms, medical applications, HR systems, and corporate websites.",
+        "Recently, I’ve also worked with Webflow to create polished, design-driven websites with premium visual appeal.",
+        "I’m always learning, improving, and exploring new technologies — aiming to build products that are not only functional but also meaningful and enjoyable to use."
       ],
     },
   ],
