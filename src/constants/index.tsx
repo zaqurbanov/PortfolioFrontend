@@ -573,7 +573,7 @@ const ABOUT_LOCATION = {
   
     {
       id: 3,
-      name: "conference-me.png",
+      name: "Me.png",
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
@@ -587,7 +587,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "txt",
       position: "top-60 left-5",
-      subtitle: "Meet the Developer Behind the Code",
+      subtitle: "About me",
       image: "/images/me.jpg",
       description: [
         "I am a Frontend Developer focused on building clean, scalable, and user-centered digital experiences.",
