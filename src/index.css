@@ -37,7 +37,7 @@ body {
   }
 
   nav {
-    @apply flex justify-between items-center bg-white/50 backdrop-blur-3xl p-2 px-5 select-none;
+    @apply flex justify-between items-center bg-white/50 backdrop-blur-3xl p-2 px-5 ;
 
     div {
       @apply flex items-center max-sm:w-full max-sm:justify-center gap-5;
@@ -48,10 +48,10 @@ body {
     }
 
     ul {
-      @apply flex items-center gap-5 max-sm:hidden;
+      @apply flex items-center gap-5 ;
 
       p {
-        @apply text-sm cursor-pointer hover:underline transition-all;
+        @apply text-[10px] sm:text-sm  cursor-pointer hover:underline transition-all;
       }
     }
 
@@ -79,7 +79,7 @@ body {
   }
 
   #dock {
-    @apply absolute bottom-5 left-1/2 -translate-x-1/2 z-50 select-none max-sm:hidden;
+    @apply absolute bottom-5 left-1/2 -translate-x-1/2 z-50 select-none ;
 
     .dock-container {
       @apply bg-white/20 backdrop-blur-md justify-between rounded-2xl p-1.5 flex items-end gap-1.5;
@@ -90,7 +90,7 @@ body {
     }
 
     .dock-icon {
-      @apply size-14 3xl:size-20 cursor-pointer;
+      @apply size-10 md:size-12 3xl:size-20 cursor-pointer;
 
       img {
         @apply object-cover object-center;

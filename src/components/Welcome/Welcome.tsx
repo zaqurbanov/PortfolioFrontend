@@ -15,11 +15,9 @@ const Welcome = () => {
 
     return (
         <section id='welcome'>
-            <p ref={subtitleRef}>{renderText("Welcome My", "text-3xl font-georama")}</p>
-            <h1 ref={titleRef} className='mt-9 '>{renderText("Portfolio", "text-9xl font-bold italic")}</h1>
-            <div className='small-screen'>
-                <p>mobile/desktop</p>
-            </div>
+            <p ref={subtitleRef}>{renderText("Welcome My", "text-xl md:text-3xl font-georama")}</p>
+            <h1 ref={titleRef} className='mt-9 '>{renderText("Portfolio", "text-5xl md:text9xl font-bold italic")}</h1>
+            
         </section>
     )
 }

@@ -6,30 +6,35 @@ import { Draggable } from 'gsap/Draggable'
 
 const Home = () => {
 const projects  = locations.work.children
-const {setActiveLocation} = useLocationStore()
+const {setActiveLocation,activeLocation} = useLocationStore()
+const {windows} = useWindowStore()
 const {openWindow} = useWindowStore()
 const handleOpenProject = (item: any) => {
+
     setActiveLocation(item)
     openWindow("finder")
 }
-
+console.log(windows);
 useGSAP(() => {
  Draggable.create(".folder")
 
 
 }, []);
+
+
+
   return (
     <div className='p-12 gap-5'>
 
-        <ul className='flex  flex-col'>
+        <ul className='flex  flex-col '>
 
       {projects.map((item: any, i: number) => (
-          <li key={i} className=' folder gap-5 justify-items-start flex flex-col  items-center w-max'
+          <li key={i} className=' folder gap-1 justify-items-start flex flex-col  items-center w-max'
           
           onClick={()=>handleOpenProject(item)}
           >
-            <img src={item.icon} alt="" className='w-16 h-16' />
-            <p className='text-white'>{item.name}</p>
+            <img src={item.icon} alt="" className='  w-8 h-8 md:w-16 md:h-16' />
+            <p className='text-white md:text-xl text-sm'>{item.name}</p>
 
         </li>
       ))}
