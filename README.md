@@ -4,7 +4,15 @@
 
 This project moves away from traditional static portfolios, offering users an engaging "Operating System" environment to explore projects, skills, and resume. It features a robust window management system, draggable elements, and fluid animations.
 
-![Project Preview](https://portfolio-frontend-yta9.vercel.app/)
+---
+
+## 🔗 Live Demo
+
+👉 **https://portfolio-frontend-yta9.vercel.app/**
+
+![Project Preview](public/macbook.png)
+
+---
 
 ## ✨ Features
 
