@@ -35,8 +35,10 @@ const WIndowWrapper = ({ children, windowKey }: Props) => {
   useGSAP(() => {
     const el = ref.current;
     if (!el) return;
+    const header = el.querySelector("#window-header");
 
     const [instance] = Draggable.create(el, {
+      trigger: header,
       onPress: () => {
         focusWindow(windowKey);
       },

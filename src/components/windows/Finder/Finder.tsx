@@ -1,5 +1,5 @@
-import WindowControls from "#components/WindowControls";
 import { locations } from "#constants/index";
+import WindowHeader from "#hoc/WindowHeader";
 import WIndowWrapper from "#hoc/WindowWrapper";
 import useLocationStore from "#store/useLocation";
 import useWindowStore from "#store/useWindowStore";
@@ -20,10 +20,7 @@ const Finder = () => {
   return (
     <WIndowWrapper windowKey="finder" windowName="finder">
       <>
-        <div id="window-header">
-          <WindowControls name={"finder"} />
-          <h2>Finder</h2>
-        </div>
+        <WindowHeader windowKey="finder" name="Finder" />
         <div className="bg-white flex h-full">
           <div className="sidebar">
             <RenderFindList

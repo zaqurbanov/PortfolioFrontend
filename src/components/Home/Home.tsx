@@ -9,6 +9,7 @@ const Home = () => {
   const { setActiveLocation } = useLocationStore();
   const { openWindow } = useWindowStore();
   const handleOpenProject = (item: any) => {
+    
     setActiveLocation(item);
     openWindow("finder");
   };
@@ -19,7 +20,12 @@ const Home = () => {
       type:"x,y",
       bounds:"main",
       inertia: true,
-      edgeResistance: 0.5
+      edgeResistance: 0.5,
+      onClick:function () {
+        
+        const projectId = this.target.id.split("-")[1];
+        handleOpenProject(projects[projectId])
+      }
     });
 
     return () => draggable.forEach((d) => d.kill());

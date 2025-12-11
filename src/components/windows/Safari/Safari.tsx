@@ -1,4 +1,4 @@
-import WindowControls from "#components/WindowControls";
+import WindowHeader from "#hoc/WindowHeader";
 import WIndowWrapper from "#hoc/WindowWrapper";
 import {
   ChevronLeft,
@@ -15,10 +15,15 @@ const Safari = () => {
   return (
     <WIndowWrapper windowKey="safari" windowName="Safari">
       <>
-        <div id="window-header">
-          <WindowControls name={"safari"} />
+
+      <WindowHeader
+      name="Safari"
+      windowKey="safari"
+      >
+<>
+
           <PanelLeft size={20} className="icon ml-1 md:ml-10" />
-          <div className="flex items-center gap-1 ml-5">
+     <div className="flex items-center gap-1 ml-5">
             <ChevronLeft className="icon" />
             <ChevronRight className="icon" />
           </div>
@@ -36,7 +41,10 @@ const Safari = () => {
             <Plus className="icon" />
             <Copy className="icon" />
           </div>
-        </div>
+</>
+
+      </WindowHeader>
+       
         <div className="blog">
           <h2>Blog</h2>
           <p>Cooming soon...</p>

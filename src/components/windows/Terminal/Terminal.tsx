@@ -1,5 +1,5 @@
-import WindowControls from "#components/WindowControls";
 import { techStack } from "#constants/index";
+import WindowHeader from "#hoc/WindowHeader";
 import WIndowWrapper from "#hoc/WindowWrapper";
 import { Check, Flag } from "lucide-react";
 
@@ -7,12 +7,8 @@ const Terminal = () => {
   return (
     <WIndowWrapper windowKey="terminal" windowName="Tech Stack">
       <>
-      <div>
-            <div id="window-header">
-              <WindowControls name={"terminal"}  />
-              <h2>Tech Stack</h2>
-            </div>
-          </div>
+        <WindowHeader name="Terminal" windowKey="terminal" />
+
         <div className="techstack">
           <p>
             <span className="font-bold">@ZaurQurbanov </span>
@@ -28,9 +24,8 @@ const Terminal = () => {
             {techStack.map(({ category, items }) => (
               <li key={category} className="flex  gap-1">
                 <div className="flex w-32">
-                  
-                <Check className="check" size={20} />
-                <h3>{category}</h3>
+                  <Check className="check" size={20} />
+                  <h3>{category}</h3>
                 </div>
                 <ul className="flex flex-wrap gap-1">
                   {items.map((item, i) => (
