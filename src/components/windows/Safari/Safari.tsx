@@ -17,7 +17,7 @@ const Safari = () => {
       <>
         <div id="window-header">
           <WindowControls name={"safari"} />
-          <PanelLeft size={20} className="icon ml-10" />
+          <PanelLeft size={20} className="icon ml-1 md:ml-10" />
           <div className="flex items-center gap-1 ml-5">
             <ChevronLeft className="icon" />
             <ChevronRight className="icon" />

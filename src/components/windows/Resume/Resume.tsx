@@ -27,9 +27,10 @@ const Resume = () => {
             <Download className="icon " />
           </a>
         </div>
-        <div className="max-h-[80vh] overflow-y-scroll">
+        <div className="max-h-[80vh] w-full  overflow-y-scroll">
           <Document file={"files/resume.pdf"}>
-            <Page pageNumber={1} renderAnnotationLayer renderTextLayer />
+            <Page pageNumber={1} renderAnnotationLayer renderTextLayer
+              />
           </Document>
         </div>
       </>
