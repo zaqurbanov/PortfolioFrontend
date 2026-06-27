@@ -56,7 +56,7 @@ const WIndowWrapper = ({ children, windowKey }: Props) => {
         <section
           id={windowKey}
           style={{ zIndex }}
-          className="absolute max-w-[300px] sm:max-w-2xl"
+          className="absolute max-w-[300px] sm:max-w-2xl shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
           ref={ref}
         >
           

@@ -21,7 +21,7 @@ const Finder = () => {
     <WIndowWrapper windowKey="finder" windowName="finder">
       <>
         <WindowHeader windowKey="finder" name="Finder" />
-        <div className="bg-white flex h-full">
+        <div className="bg-white dark:bg-gray-900 flex h-full">
           <div className="sidebar">
             <RenderFindList
               renderName="Favorites"

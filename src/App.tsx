@@ -11,9 +11,16 @@ import Text from '#components/Text/Text';
 import Image from '#components/Image/Image';
 import Contact from '#components/windows/Contact/Contact';
 import Home from '#components/Home/Home';
+import useKeyboardShortcuts from '#hooks/useKeyboardShortcuts';
+import useThemeStore from '#store/useThemeStore';
+import { useEffect } from 'react';
 gsap.registerPlugin(Draggable)
 function App() {
-  
+  useKeyboardShortcuts();
+  const { isDark } = useThemeStore();
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', isDark);
+  }, [isDark]);
   return (
     <>
 

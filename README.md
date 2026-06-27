@@ -1,8 +1,26 @@
-#  macOS Style Portfolio
+#  macOS Style Portfolio
 
 > An interactive portfolio website mimicking the macOS desktop experience, built with **React**, **TypeScript**, and **GSAP**.
 
 This project moves away from traditional static portfolios, offering users an engaging "Operating System" environment to explore projects, skills, and resume. It features a robust window management system, draggable elements, and fluid animations.
+
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=flat&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-3.13-88CE02?style=flat&logo=greensock&logoColor=black)
+![Zustand](https://img.shields.io/badge/Zustand-5-000000?style=flat)
+
+---
+
+## 📋 Table of Contents
+
+- [Live Demo](#-live-demo)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#-getting-started)
+- [Project Structure](#-project-structure)
+- [License](#-license)
 
 ---
 
@@ -17,8 +35,8 @@ This project moves away from traditional static portfolios, offering users an en
 ## ✨ Features
 
 * **🖥️ OS Simulation:** A fully functional desktop environment with a Dock, Menu Bar, and Desktop icons.
-* **🪟 Window Management:** sophisticated system for opening, closing, minimizing, and managing window stacking order (z-index).
-* **🤏 Drag & Drop:** seamless dragging for desktop icons and application windows using `GSAP Draggable` (supports both desktop and touch devices).
+* **🪟 Window Management:** Sophisticated system for opening, closing, minimizing, and managing window stacking order (z-index).
+* **🤏 Drag & Drop:** Seamless dragging for desktop icons and application windows using `GSAP Draggable` (supports both desktop and touch devices).
 * **📱 Fully Responsive:** Adaptive design that works smoothly on mobile devices and tablets, powered by `Tailwind CSS v4`.
 * **📂 Finder System:** A simulated file system to navigate through projects and "files".
 * **🚀 High Performance:** Built on `Vite` for lightning-fast HMR and optimized production builds.
@@ -29,6 +47,8 @@ This project moves away from traditional static portfolios, offering users an en
     * **Resume:** Integrated PDF viewer (`react-pdf`) to view CVs directly.
     * **Contact:** Connect via social media.
     * **Photos:** Image gallery.
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -43,6 +63,8 @@ This project leverages the latest modern frontend technologies:
 * **Icons:** [Lucide React](https://lucide.dev/) - Beautiful & consistent icons.
 * **Utilities:** [React-PDF](https://github.com/wojtekmaj/react-pdf) - For rendering PDF files.
 
+---
+
 ## 🚀 Getting Started
 
 Follow these steps to set up the project locally on your machine.
@@ -55,7 +77,7 @@ Follow these steps to set up the project locally on your machine.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/zaqurbanov/PortfolioFrontend.git](https://github.com/zaqurbanov/PortfolioFrontend.git)
+    git clone https://github.com/zaqurbanov/PortfolioFrontend.git
     cd PortfolioFrontend
     ```
 
@@ -77,6 +99,18 @@ Follow these steps to set up the project locally on your machine.
     npm run build
     ```
 
+5.  **Preview the production build:**
+    ```bash
+    npm run preview
+    ```
+
+6.  **Lint the codebase:**
+    ```bash
+    npm run lint
+    ```
+
+---
+
 ## 📂 Project Structure
 
 The codebase follows a modular and clean architecture pattern:
@@ -96,3 +130,8 @@ src/
 │   └── useLocationStore.ts # Manages Finder path navigation
 ├── 📁 assets/          # Static assets
 └── 📄 App.tsx          # Main application entry point
+```
+
+---
+
+

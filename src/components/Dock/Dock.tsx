@@ -70,7 +70,7 @@ const Dock = () => {
       <div ref={dockRef} className="dock-container">
         {dockApps.map(({ canOpen, icon, id, name }) => {
           return (
-            <div key={id} className="relative flex justify-center group">
+            <div key={id} className="relative flex flex-col items-center gap-0.5 group">
               <button
                 type="button"
                 aria-label={name}
@@ -85,7 +85,9 @@ const Dock = () => {
                   className={`${canOpen ? "" : "opacity-60"}`}
                 />
               </button>
-
+              <span
+                className={`w-1 h-1 rounded-full bg-white/80 transition-opacity duration-300 ${windows[id]?.isOpen ? "opacity-100" : "opacity-0"}`}
+              />
               {<Tooltip name={name} />}
             </div>
           );
