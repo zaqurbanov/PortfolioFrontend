@@ -20,8 +20,8 @@ const NavIcon = () => {
           className="cursor-pointer flex items-center"
         >
           {isDark
-            ? <Sun size={14} strokeWidth={1.8} className="text-yellow-300" />
-            : <Moon size={14} strokeWidth={1.8} className="text-amber-400" />
+            ? <Sun size={16} strokeWidth={1.5} className="w-4 h-4 text-black dark:text-white opacity-70 dark:opacity-80" />
+            : <Moon size={16} strokeWidth={1.5} className="w-4 h-4 text-black dark:text-white opacity-70 dark:opacity-80" />
           }
         </button>
       </li>

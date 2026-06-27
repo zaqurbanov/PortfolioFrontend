@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav>
       <div>
           <img src="/images/pear.png" alt="logo" className='w-8 ' />
-        <p className='font-bold'>Qurbanov Zaur</p>
+        <p className='font-bold text-black dark:text-gray-100'>Qurbanov Zaur</p>
         <Navlink />
       </div>
       <div>
